@@ -1,4 +1,17 @@
- const TeamsAPI=[{name:"Arizona Cardinals",logo:""},
+import {  Link ,Routes,Route} from "react-router-dom"
+/*import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'*/
+import './App.css'
+
+import AllTeams from "./AllTeams";
+import TeamDetails from './TeamDetails'
+
+
+
+function App() {
+  //const [count, setCount] = useState(0)
+/*
+  const allteams=[{name:"Arizona Cardinals",logo:""},
   {name:"Atlanta Falcons",logo:""},
   {name:"Baltimore Ravens",logo:""},
   {name:"Buffalo Bills",logo:""},
@@ -30,6 +43,31 @@
   {name:"Tampa Bay Buccaneers",logo:""},
   {name:"Tennessee Titans",logo:""},
   {name:"Washington Commanders",logo:""}
-  ];
+  ];*/
 
- export default TeamsAPI;
+  return(
+    <div>
+      <div id="websitename" >Porky Pylon</div>
+    <Routes>
+      <Route path="/" element={<AllTeams />}/>
+      <Route path="/teamsapi/:selectteam" element={<TeamDetails />}/>
+    </Routes>
+    </div>
+  );
+}
+
+export default App
+/* 
+ <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+
+      </div>
+
+<a style ={{display:"hidden"}} href="https://vite.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a style ={{visibility:"none"}} href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a> */

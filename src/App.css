@@ -14,10 +14,17 @@ margin:0 auto 0 auto;
 }
 #homepage{
   background-color: rgb(152, 152, 250);
-  width:75vw;
+  width:60vw;
   height:75vh;
   display:block;
-  overflow: scroll;
+  overflow-y: scroll;
+  margin:0 auto 0 auto;
+  text-align:center;
+}
+
+.teamlogo{
+  width:10%;
+  height:50%;
 }
 
 .clicktheteam{
@@ -28,4 +35,14 @@ margin:0 auto 0 auto;
   height:15%;
   display:inline-block
 
+}
+
+.teamdetailsdiv{
+  width:99vw;
+  height:100vh;
+}
+
+.displaylogo2{
+  width:20%;
+  height:40%;
 }

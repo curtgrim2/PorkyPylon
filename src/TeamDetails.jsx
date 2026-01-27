@@ -20,8 +20,9 @@ export default function TeamDetails(){
 if(!displayteam) return <p>ERROR</p>;
 
 return(
-<div>
-    <h2>{displayteam.name}</h2>
+<div className="teamdetailsdiv" style={{backgroundColor:displayteam.primaryColor}}>
+    <h2 style={{backgroundColor:"white",textAlign:"center"}}>{displayteam.name}</h2>
+    <img className="displaylogo2"src={displayteam.logo} />
 </div>
 );
 }

@@ -13,6 +13,7 @@ export default function AllTeams(){
      to={`/teamsapi/${team.name}`}     
      style={{cursor:"pointer"}}>
       {team.name}
+      <img src={team.logo} alt={team.name} className="teamlogo"/>
       </Link>)}
     
 
