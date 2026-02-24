@@ -1,6 +1,10 @@
 
+*{
+  margin:0;
+}
+
 body{
-background-color:purple;
+background-color:rgb(1, 1, 105);
 }
 #root{
 width:100vw;
@@ -10,16 +14,97 @@ height:100vh;
 background-color: white;
 text-align:center;
 width:50%;
-margin:0 auto 0 auto;
+margin:auto;
 }
+
+#homepagecontainer{
+  height:100vh;
+  display:flex;
+  align-items: center;
+  
+}
+
 #homepage{
-  background-color: rgb(152, 152, 250);
-  width:60vw;
-  height:75vh;
+  width:90vw;
+  height:50vh;
+  color:white;
+  text-align:center;
+  background-color:rgba(0,0,0,.3);
+  margin:0 auto 0 auto;
+  border-radius: 50px;
+  cursor:pointer;
+}
+
+#homepage >*{
+height:25%;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+#homepage >*:hover{
+background-color:rgba(255, 4, 4, 0.3);
+  border-radius: 50px;
+
+}
+
+#teamslink{
+  color:white;
+  font-weight:normal;
+  height:25%;
+}
+
+#teamslink:hover{
+  background-color:rgba(255,4,4,0.3);
+}
+
+#playstyles li{
+list-style:none;
+background-color: rgba(0,0,0,.1);
+}
+
+#playstyles:hover li{
+  display:block;
+}
+
+
+#allteamspage{
+  background-color: rgba(0, 0, 0,.3);
+  position:relative;
+  z-index:2;
+  width:80vw;
+  height:60vh;
   display:block;
   overflow-y: scroll;
   margin:0 auto 0 auto;
   text-align:center;
+  border-top:1vh solid black;
+  border-bottom:1vh solid black;
+}
+#allteamspage > *{
+  border: .1px inset white;
+}
+/*#allteamspage::-webkit-scrollbar {
+  width: 10px;
+}*/
+
+#fadedback{
+  position:absolute;
+  z-index:1;
+  opacity:.3;
+  width:99vw;
+  height:96vh;
+}
+
+
+.clicktheteam{
+  text-align:center;
+  width:32%;
+  margin:1px;
+  height:15%;
+  display:inline-block;
+  font-size:1.5vw;
+
 }
 
 .teamlogo{
@@ -27,15 +112,7 @@ margin:0 auto 0 auto;
   height:50%;
 }
 
-.clicktheteam{
-  background-color:white;
-  text-align:center;
-  margin:5px;
-  width:32%;
-  height:15%;
-  display:inline-block
 
-}
 
 .teamdetailsdiv{
   width:99vw;

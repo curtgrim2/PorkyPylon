@@ -1,5 +1,5 @@
  const TeamsAPI=[
-  {name:"Arizona Cardinals",logo:"https://a.espncdn.com/i/teamlogos/nfl/500/ari.png", primaryColor:"#97233F", secondaryColor:"#000000"},
+  {name:"Arizona Cardinals",logo:"https://a.espncdn.com/i/teamlogos/nfl/500/ari.png", primaryColor:"#97233F", secondaryColor:"#000000"} ,
   {name:"Atlanta Falcons",logo:"https://a.espncdn.com/i/teamlogos/nfl/500/atl.png", primaryColor:"#A71930", secondaryColor:"#000000"},
   {name:"Baltimore Ravens",logo:"https://a.espncdn.com/i/teamlogos/nfl/500/bal.png", primaryColor:"#241773", secondaryColor:"#000000"},
   {name:"Buffalo Bills",logo:"https://a.espncdn.com/i/teamlogos/nfl/500/buf.png", primaryColor:"#00338D", secondaryColor:"#C60C30"},
