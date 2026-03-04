@@ -16,12 +16,6 @@ export default function TeamDetails(){
         .then((data) => setTeam(data));
     },[]);
 
-   /* useEffect (() => {
-        fetch(`http://localhost:5173/teams/${id}`)
-        .then(res=> res.json())
-        .then(data => setBook(data));
-    }, [selectteam]
-);*/
 
 
 if(!displayteam) return <p>ERROR</p>;

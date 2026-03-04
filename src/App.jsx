@@ -6,6 +6,8 @@ import './App.css'
 import AllTeams from "./AllTeams";
 import TeamDetails from './TeamDetails'
 import Homepage from './Homepage'
+import Vocab from "./VocabMain";
+import VocabDefine from "./VocabDefine";
 
 
 
@@ -14,11 +16,13 @@ function App() {
 
   return(
     <div>
-      <div id="websitename" >Porky Pylon</div>
+      <Link to="/" id="websitename" >Porky Pylon</Link> 
     <Routes>
       <Route path="/" element={<Homepage />}/>
       <Route path="/teams" element={<AllTeams/>}/>
       <Route path="/teams/:selectteam" element={<TeamDetails />}/>
+      <Route path ="/vocab" element={<Vocab />}/>
+      <Route path="/vocab/:word" element={<VocabDefine />}/>
     </Routes>
     </div>
   );

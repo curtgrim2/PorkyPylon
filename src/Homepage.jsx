@@ -6,10 +6,13 @@ export default function Homepage(){
         <div id="homepage"> 
         <Link to="/teams"><div id="teamslink">All Teams</div> </Link>
 
-        <ul id="playstyles"> <div id="pstag">Play Styles</div>
-            <li>Offense</li> {/*We'll need a database for these */}
+        <div id="playstyles"> 
+            <div id="pstag">Vocab</div>
+            <ul>
+           <Link to="/vocab"><li>Offense</li> </Link> {/*We'll need a database for these */}
             <li>Defense</li>
-        </ul>
+            </ul>
+        </div>
     
         <div>Games</div>
         <div>Popular Play-Concept- of the week</div>
