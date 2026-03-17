@@ -1,21 +1,24 @@
 import {Link} from 'react-router-dom'
+import todaysConcept from "./Homepage1";
 
 export default function Homepage(){
     return(
         <div id="homepagecontainer">
-        <div id="homepage"> 
+        <div id="homepagebubble"> 
         <Link to="/teams"><div id="teamslink">All Teams</div> </Link>
 
-        <div id="playstyles"> 
-            <div id="pstag">Vocab</div>
-            <ul>
-           <Link to="/vocab"><li>Offense</li> </Link> {/*We'll need a database for these */}
-            <li>Defense</li>
-            </ul>
-        </div>
+        {/*<div id="playstyles"> */}
+            
+           <Link to="/vocab">            
+           <div id="pstag">Vocab</div>
+            </Link> {/*We'll need a database for these 
+            
+        </div>*/}
     
         <div>Games</div>
-        <div>Popular Play-Concept- of the week</div>
+        <div>Popular Play-Concept- of the week
+            <div>{todaysConcept()}</div>
+        </div>
         </div>
         </div>
     );

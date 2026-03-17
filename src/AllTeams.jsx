@@ -45,10 +45,13 @@ function hexToRGBA(hex, opacity) {
 }
     
     return (
-<div>
+<div style={{overFlow:"no-scroll",height:"100vh",width:"100vw",display:"flex", flexDirection:"column", alignItems:"center",justifyContent:"center"}}> 
+  {/*style =
+{{height:"99%",display:"flex", flexDirection:"column", alignItems:"center",
+justifyContent:"center"}} */}
     <div id="fadedback"></div>
+    <div id="atcontainer">
     <div id="allteamspage">
-
      {TeamsAPI.map((team)=> 
      <Link className="clicktheteam" 
      key={team.name}
@@ -64,6 +67,7 @@ function hexToRGBA(hex, opacity) {
       </Link>)}
     
 
+    </div>
     </div>
     </div>
     );

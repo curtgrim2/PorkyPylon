@@ -17,6 +17,10 @@ const vocabwords =[
     {word:"Wide Zone",description:"Plays rely on a possible running backplay fake;", side:"offense", type:"scheme",
             related:["21 personnel", "Under Center", "Outside Zone"]},
 
+
+
+      
+
 //Personnels/Formations
 
     {word:"12 Personnel", description:"A formation with 12 players on the field, typically including 2 running backs and 10 receivers.", 
@@ -29,12 +33,20 @@ const vocabwords =[
       side:"offense", type:"formation",
         related:["12 Personnel","21 Personnel"]},
 
-        
+        {word:"Cover 1", description:"", side:"defense", type:"formation",
+        related:["Cover 2","Cover 3"]},
+
          {word:"Cover 2", description:"", side:"defense", type:"formation",
-        related:["Cover 3"]},
+        related:["Cover 1","Cover 3"]},
 
         {word:"Cover 3", description:"", side:"defense", type:"formation",
-        related:["Cover 2"]},
+        related:["Cover 1","Cover 2"]},
+
+        {word:"4-3 Over", description:"(Also known as 4-3 base)", side:"", type:"",
+        related:""},
+
+        {word:"4-3 Attack", description:"", side:"defense", type:"",
+        related:""},
       
 //Player alignments
    {word:"Under Center", description:"The quarterback lines up directly behind the center.", side:"offense", type:"alignment",
@@ -43,9 +55,11 @@ const vocabwords =[
    {word:"Shotgun", description:"", side:"offense", type:"alignment",
         related:""}, 
 
+   {word:"3 Technique", description:"", side:"defense", type:"alignment",
+        related:""},
 
 
-         /*   {word:"", description:"", side:"", type:"",
+/* {word:"", description:"", side:"", type:"",
         related:""}, */
 ];
 
