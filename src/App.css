@@ -16,11 +16,18 @@ position:absolute;
 z-index:3;
 /*Do we need previous 2 elements?*/
 
-
+display:flex;
+justify-content:center;
+align-items:center;
 background-color: white;
 text-align:center;
-width:fit-content;
 margin:auto;
+width:fit-content;
+text-align:left;
+}
+
+#weblogo{
+  width:6vh;
 }
 
 #homepagecontainer{

@@ -2,7 +2,6 @@ import {  Link ,Routes,Route} from "react-router-dom"
 /*import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'*/
 import './App.css'
-
 import AllTeams from "./AllTeams";
 import TeamDetails from './TeamDetails'
 import Homepage from './Homepage'
@@ -16,7 +15,7 @@ function App() {
 
   return(
     <div>
-      <Link to="/" id="websitename" >Porky Pylon</Link> 
+      <Link to="/"> <div id="websitename" ><span >Porky Pylon</span> <img id="weblogo" src="./porkypylon.png" /> </div></Link>
     <Routes>
       <Route path="/" element={<Homepage />}/>
       <Route path="/teams" element={<AllTeams/>}/>

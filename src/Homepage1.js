@@ -1,9 +1,20 @@
+import VocabAPI from "./VocabAPI";
+
 export function todaysConcept(){
     var test = 1;
-    var today = new Date();
+    var today = new Date().toISOString().slice(0,10);
+    var seed = today.replace(/-/g, '');
     
-    return today.getDate();
-    //console.log("Today's concept is: ");
+    let x = Math.sin(seed) * 10000;
+    var randomseed = x - Math.floor(x);
+
+    var array =[];
+
+    const count = VocabAPI.length;
+
+    const whichconcept = Math.floor(randomseed * count);
+    return whichconcept;
+    //console.log("Today's concept is: " +today.getDate());
 }
 
 export default todaysConcept

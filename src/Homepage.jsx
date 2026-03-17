@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom'
 import todaysConcept from "./Homepage1";
+import VocabAPI from "./VocabAPI";
 
 export default function Homepage(){
     return(
@@ -16,9 +17,11 @@ export default function Homepage(){
         </div>*/}
     
         <div>Games</div>
-        <div>Popular Play-Concept- of the week
-            <div>{todaysConcept()}</div>
+        <Link to ={`/vocab/${VocabAPI[todaysConcept()].word}`}>
+                <div style={{color:"white",fontWeight:"normal"}}> Play-Concept- of the week:
+            <div>{VocabAPI[todaysConcept()].word}</div>
         </div>
+        </Link>
         </div>
         </div>
     );
