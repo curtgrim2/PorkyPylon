@@ -173,10 +173,20 @@ background-color:rgba(0,0,0,.3);
 
 
 .teamdetailsdiv{
-  width:99vw;
-  height:100vh;
+  width:100%;
+  height:fit-content;
+  min-height:100vh;
   text-align:center;
+  font-size:4vh;
+}
+
+.teamdetailsdiv h2{
+  background-color:white;
+  text-align:center;
+  height:10%;
   font-size:3vh;
+  width:50%;
+ float:right;
 }
 
 .displaylogo2{

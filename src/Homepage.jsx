@@ -18,7 +18,7 @@ export default function Homepage(){
     
         <div>Games</div>
         <Link to ={`/vocab/${VocabAPI[todaysConcept()].word}`}>
-                <div style={{color:"white",fontWeight:"normal"}}> Play-Concept- of the week:
+                <div style={{color:"white",fontWeight:"normal"}}> Play-Concept of the week:
             <div>{VocabAPI[todaysConcept()].word}</div>
         </div>
         </Link>

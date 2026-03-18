@@ -2,7 +2,7 @@ import VocabAPI from "./VocabAPI";
 
 export function todaysConcept(){
     var test = 1;
-    var today = new Date().toISOString().slice(0,10);
+    var today = new Date().toLocaleDateString('en-CA');
     var seed = today.replace(/-/g, '');
     
     let x = Math.sin(seed) * 10000;

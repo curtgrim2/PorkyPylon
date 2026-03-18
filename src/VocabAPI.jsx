@@ -51,16 +51,34 @@ const vocabwords =[
 //Player alignments
    {word:"Under Center", description:"The quarterback lines up directly behind the center.", side:"offense", type:"alignment",
         related:""},
-
    {word:"Shotgun", description:"", side:"offense", type:"alignment",
-        related:""}, 
-
+        related:["Gun","Pistol"]}, 
+   {word:"Pistol", description:"", side:"offense", type:"alignment",
+        related:["Gun","Shotgun"]}, 
+   {word:"Gun", description:"", side:"offense", type:"alignment",
+        related:["Shotgun","Pistol"]},
    {word:"3 Technique", description:"", side:"defense", type:"alignment",
         related:""},
 
+//Player Positions
+{word:"Y Tight End", description:"", side:"offense", type:"position",
+        related:["Inline Tight End"]},
+{word:"Inline Tight End", description:"", side:"offense", type:"position",
+        related:["Y Tight End"]},
+{word:"X Wide Receiver", description:"", side:"offense", type:"position",
+        related:["Z Wide Receiver"]},
+{word:"Z Wide Receiver", description:"", side:"offense", type:"position",
+        related:["X Wide Receiver"]},
+{word:"Nickel Cornerback", description:"", side:"defense", type:"position",
+        related:""},
+{word:"Strong Safety", description:"", side:"defense", type:"position",
+        related:["Free Safety"]},
+{word:"Free Safety", description:"", side:"defense", type:"position",
+      related:["Strong Safety"]},
 
 /* {word:"", description:"", side:"", type:"",
         related:""}, */
+
 ];
 
 

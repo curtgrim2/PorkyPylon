@@ -15,7 +15,7 @@ function App() {
 
   return(
     <div>
-      <Link to="/"> <div id="websitename" ><span >Porky Pylon</span> <img id="weblogo" src="./porkypylon.png" /> </div></Link>
+      <Link to="/"> <div id="websitename" ><span >Porky Pylon</span> <img id="weblogo" src="/porkypylon/porkypylon.png" /> </div></Link>
     <Routes>
       <Route path="/" element={<Homepage />}/>
       <Route path="/teams" element={<AllTeams/>}/>

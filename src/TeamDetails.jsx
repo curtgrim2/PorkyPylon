@@ -22,7 +22,8 @@ if(!displayteam) return <p>ERROR</p>;
 
 return(
 <div className="teamdetailsdiv" style={{backgroundColor:displayteam.primaryColor, color:displayteam.secondaryColor}}>
-    <h2 style={{backgroundColor:"white",textAlign:"center"}}>{displayteam.name}</h2>
+    <h2>{displayteam.name}</h2>
+    <br></br>
     {/*<img className="displaylogo2"src={displayteam.logo} />*/}
     <div>Players (Or Position Groups)</div>
 

@@ -30,6 +30,7 @@ const filterVocab = VocabAPI.filter(word =>{ //This is where setType triggers th
             <option value="scheme">Scheme</option>
             <option value="alignment">Alignment</option>
             <option value="formation">Formation</option>
+            <option value="position">Position</option>
         </select>
 
         <select className="dropdowns" onChange={(e)=>setSide(e.target.value)}>
