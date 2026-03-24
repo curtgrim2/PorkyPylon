@@ -20,9 +20,9 @@ const filterVocab = VocabAPI.filter(word =>{ //This is where setType triggers th
 
     return(
         <div style={{width:"100%",display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column"}}>
-        <h1>Football Vocabulary</h1>
+        <h1 style={{fontSize:"4vw"}}>Football Vocabulary</h1>
 
-        <div style={{width:"fit-content",backgroundColor:"grey",display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column"}}>
+        <div style={{width:"fit-content",backgroundColor:"grey",boxShadow:"0 0 25px 0px grey",display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column"}}>
         
         <div style={{width:"100%"}}>
              <select className="dropdowns" onChange={(e) => setType(e.target.value)}>

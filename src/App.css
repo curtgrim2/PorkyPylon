@@ -38,33 +38,49 @@ text-align:left;
 }
 
 #homepagebubble{
-  width:40vw;
-  height:50vh;
+  /*width:40vw;
+  height:50vh;*/
+  width:90%;
+  height:60%;
   color:white;
   text-align:center;
   background-color:rgba(0,0,0,.3);
   margin:0 auto 0 auto;
   border-radius: 50px;
-  cursor:pointer;
+  box-shadow: 0 0 25px 0px grey;
+
+  display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
 }
 
 #homepagebubble >*{
-height:25%;
 display:flex;
 align-items:center;
 justify-content:center;
+width:50%;
+background-color: rgba(0,0,0,.3);
+margin:.5% 0;
+padding:.5% 0;
+
 }
 
 #homepagebubble >*:hover{
 background-color:rgba(255, 4, 4, 0.3);
-  border-radius: 50px;
 
+}
+
+#cotw{
+height:75%;
+width:50%;
+background-color:black;
+box-shadow: 0 0 10px 2px white;
 }
 
 #teamslink{
   color:white;
   font-weight:normal;
-  height:25%;
   display:block;
 }
 
@@ -231,19 +247,22 @@ background-color:rgba(0,0,0,.3);
   overflow-y: scroll;
   display:flex;
   flex-direction:column;
- align-items: end;
+ align-items: center;
 }
 
 .vocab{
   display:block;
-  background-color:white;
+  background-color:grey;
   padding:2.5% 0;
   width:75%;
-  border-top-left-radius:50px;
-  border-bottom-left-radius:50px;
+  border-radius:50px;
+  /*border-top-left-radius:50px;
+  border-bottom-left-radius:50px;*/
   margin:1% 0;
   text-align:center;
   font-size:2vh;
+  border: double 5px white;
+  color:white;
 
 }
 
@@ -254,9 +273,9 @@ background-color:rgba(0,0,0,.3);
 
 .vocabDescription{
   background-color:rgba(0,0,0,1);
-  width:70%;
-  height:75%;
-  margin:1% auto 1% auto;
+  width:100%;
+  height:100%;
+  margin:0% auto 1% auto;
   color:white;
 display:flex;
 align-items:center;

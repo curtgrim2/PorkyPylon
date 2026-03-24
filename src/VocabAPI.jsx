@@ -25,13 +25,15 @@ const vocabwords =[
 
     {word:"12 Personnel", description:"A formation with 12 players on the field, typically including 2 running backs and 10 receivers.", 
       side:"offense", type:"formation",
-        related:["21 Personnel","11 Personnel"]},
+        related:["21 Personnel","11 Personnel","00 Personnel"]},
         {word:"21 Personnel", description:"A formation with 21 players on the field, typically including 2 running backs and 1 tight end.", 
       side:"offense", type:"formation",
-        related:["12 Personnel","11 Personnel"]}, 
+        related:["12 Personnel","11 Personnel","00 Personnel"]}, 
         {word:"11 Personnel", description:"A formation with 11 players on the field, typically including 1 running back and 1 tight end.", 
       side:"offense", type:"formation",
-        related:["12 Personnel","21 Personnel"]},
+        related:["12 Personnel","21 Personnel","00 Personnel"]},
+        {word:"00 Personnel", description:"Also known as 'Empty'.", side:"offense", type:"formation",
+        related:["12 Personnel","21 Personnel","11 Personnel"]},
 
         {word:"Cover 1", description:"", side:"defense", type:"formation",
         related:["Cover 2","Cover 3"]},
@@ -51,14 +53,13 @@ const vocabwords =[
 //Player alignments
    {word:"Under Center", description:"The quarterback lines up directly behind the center.", side:"offense", type:"alignment",
         related:""},
-   {word:"Shotgun", description:"", side:"offense", type:"alignment",
-        related:["Gun","Pistol"]}, 
-   {word:"Pistol", description:"", side:"offense", type:"alignment",
-        related:["Gun","Shotgun"]}, 
-   {word:"Gun", description:"", side:"offense", type:"alignment",
-        related:["Shotgun","Pistol"]},
-   {word:"3 Technique", description:"", side:"defense", type:"alignment",
-        related:""},
+   {word:"Shotgun", description:"Quarterback lines up 5-7 yards behind center lineman. Also of note, the running back is lined up next to the quarterback.", side:"offense", type:"alignment",
+        related:["Pistol"]}, 
+   {word:"Pistol", description:"Quarterback lines up 3-4 yards behind center lineman. Also of note, the running back is lined up directly behind the quarterback.", side:"offense", type:"alignment",
+        related:["Shotgun"]}, 
+  
+   {word:"3 Technique", description:"Defensive Lineman who lines up in the B Gap", side:"defense", type:"alignment",
+        related:"Gaps"},
 
 //Player Positions
 {word:"Y Tight End", description:"", side:"offense", type:"position",
@@ -75,6 +76,13 @@ const vocabwords =[
         related:["Free Safety"]},
 {word:"Free Safety", description:"", side:"defense", type:"position",
       related:["Strong Safety"]},
+
+{word:"Middle Linebacker(Mike)", description:"", side:"defense", type:"position",
+        related:["Weakside Linebacker(Will)","Strongside Linebacker(Sam)"]},
+{word:"Weakside Linebacker(Will)", description:"", side:"defense", type:"position",
+        related:["Middle Linebacker(Mike)","Strongside Linebacker(Sam)"]},
+{word:"Strongside Linebacker(Sam)", description:"", side:"defense", type:"position",
+        related:["Middle Linebacker(Mike)","Weakside Linebacker(Will)"]},
 
 /* {word:"", description:"", side:"", type:"",
         related:""}, */
